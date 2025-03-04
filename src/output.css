@@ -7,12 +7,15 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-500: oklch(0.637 0.237 25.331);
+    --color-amber-950: oklch(0.279 0.077 45.635);
     --spacing: 0.25rem;
     --container-3xs: 16rem;
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
+    --text-2xl: 1.5rem;
+    --text-2xl--line-height: calc(2 / 1.5);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
     --font-weight-bold: 700;
@@ -240,6 +243,24 @@
   .end-2 {
     inset-inline-end: calc(var(--spacing) * 2);
   }
+  .right-\[50px\] {
+    right: 50px;
+  }
+  .right-\[180px\] {
+    right: 180px;
+  }
+  .bottom-\[0px\] {
+    bottom: 0px;
+  }
+  .bottom-\[30px\] {
+    bottom: 30px;
+  }
+  .bottom-\[95px\] {
+    bottom: 95px;
+  }
+  .bottom-\[100px\] {
+    bottom: 100px;
+  }
   .isolate {
     isolation: isolate;
   }
@@ -350,6 +371,9 @@
     @media (width >= 96rem) {
       max-width: 96rem !important;
     }
+  }
+  .mx-auto {
+    margin-inline: auto;
   }
   .mt-\[40px\] {
     margin-top: 40px;
@@ -465,8 +489,17 @@
   .h-\[62px\] {
     height: 62px;
   }
+  .h-\[135px\] {
+    height: 135px;
+  }
   .h-\[190px\] {
     height: 190px;
+  }
+  .h-\[200px\] {
+    height: 200px;
+  }
+  .h-\[300px\] {
+    height: 300px;
   }
   .h-\[400px\] {
     height: 400px;
@@ -528,17 +561,29 @@
   .w-\[163px\] {
     width: 163px;
   }
+  .w-\[189px\] {
+    width: 189px;
+  }
   .w-\[190px\] {
     width: 190px;
   }
+  .w-\[200px\] {
+    width: 200px;
+  }
   .w-\[209px\] {
     width: 209px;
+  }
+  .w-\[300px\] {
+    width: 300px;
   }
   .w-\[555px\] {
     width: 555px;
   }
   .w-screen {
     width: 100vw;
+  }
+  .max-w-\[152px\] {
+    max-width: 152px;
   }
   .max-w-\[224px\] {
     max-width: 224px;
@@ -552,6 +597,9 @@
   .max-w-\[394px\] {
     max-width: 394px;
   }
+  .max-w-\[414px\] {
+    max-width: 414px;
+  }
   .max-w-\[416px\] {
     max-width: 416px;
   }
@@ -564,8 +612,14 @@
   .max-w-\[504px\] {
     max-width: 504px;
   }
+  .max-w-\[571px\] {
+    max-width: 571px;
+  }
   .max-w-\[572px\] {
     max-width: 572px;
+  }
+  .max-w-\[600px\] {
+    max-width: 600px;
   }
   .max-w-none {
     max-width: none;
@@ -959,6 +1013,9 @@
   .gap-\[8px\] {
     gap: 8px;
   }
+  .gap-\[10px\] {
+    gap: 10px;
+  }
   .gap-\[15px\] {
     gap: 15px;
   }
@@ -971,11 +1028,20 @@
   .gap-\[35px\] {
     gap: 35px;
   }
+  .gap-\[50px\] {
+    gap: 50px;
+  }
   .gap-\[80px\] {
     gap: 80px;
   }
   .gap-\[100px\] {
     gap: 100px;
+  }
+  .gap-\[135px\] {
+    gap: 135px;
+  }
+  .gap-\[150px\] {
+    gap: 150px;
   }
   .gap-\[200px\] {
     gap: 200px;
@@ -1209,6 +1275,9 @@
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
   }
+  .bg-amber-950 {
+    background-color: var(--color-amber-950);
+  }
   .bg-red-500 {
     background-color: var(--color-red-500);
   }
@@ -1422,6 +1491,9 @@
   .pt-\[50px\] {
     padding-top: 50px;
   }
+  .pt-\[60px\] {
+    padding-top: 60px;
+  }
   .pt-\[70px\] {
     padding-top: 70px;
   }
@@ -1437,6 +1509,18 @@
   .pr-25 {
     padding-right: calc(var(--spacing) * 25);
   }
+  .pr-\[10px\] {
+    padding-right: 10px;
+  }
+  .pr-\[100px\] {
+    padding-right: 100px;
+  }
+  .pr-\[150px\] {
+    padding-right: 150px;
+  }
+  .pr-\[250px\] {
+    padding-right: 250px;
+  }
   .pb-\[15px\] {
     padding-bottom: 15px;
   }
@@ -1445,6 +1529,9 @@
   }
   .pb-\[30px\] {
     padding-bottom: 30px;
+  }
+  .pb-\[100px\] {
+    padding-bottom: 100px;
   }
   .pl-25 {
     padding-left: calc(var(--spacing) * 25);
@@ -1503,6 +1590,10 @@
   .font-mono {
     font-family: var(--font-mono);
   }
+  .text-2xl {
+    font-size: var(--text-2xl);
+    line-height: var(--tw-leading, var(--text-2xl--line-height));
+  }
   .text-3xl {
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
@@ -1514,6 +1605,12 @@
   .text-sm {
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+  .text-\[12px\] {
+    font-size: 12px;
+  }
+  .text-\[15px\] {
+    font-size: 15px;
   }
   .text-\[17px\] {
     font-size: 17px;
@@ -1798,6 +1895,9 @@
   }
   .scheme-only-light {
     color-scheme: only light;
+  }
+  .opacity-10 {
+    opacity: 10%;
   }
   .opacity-70 {
     opacity: 70%;
