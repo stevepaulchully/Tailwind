@@ -126,9 +126,9 @@
                 </div>
 
             </section>
-            <section class="w-[1] h-[850px] bg-gradient-to-b from-[#E4FAF4] to-[#ffffff] mt-[100px]">
-                <div class="md:flex md:pt-[50px] gap-[50px]"><!-- flex of left section and image -->
-                    <div class="flex flex-col md:pl-[100px]"><!-- Flex to align the left section in column-->
+            <section class="w-[1] h-[850px] bg-gradient-to-b from-[#E4FAF4] to-[#ffffff] md:mt-[100px] mt-[500px]">
+                <div class="md:flex md:pt-[50px] gap-[50px] pl-[20px] md:pl-[0px]"><!-- flex of left section and image -->
+                    <div class="flex flex-col md:pl-[100px] pt-[50px] md:pt-[0px]"><!-- Flex to align the left section in column-->
                         <p class="text-[40px] font-bold"><strong>Ask the Expert</strong></p>
                         <p class="text-[17px] text-[#2222228c]">You can schedule a meeting with an expense manager</p>
                         <div class="flex flex-col md:flex-row md:gap-[30px]"><!-- Flex to align the schedule,row for lg and col for sm -->
@@ -151,27 +151,31 @@
 
                         </div>
                     </div>
-                    <img class="w-[555px] h-[633px]" src="assets/Expert.png" alt="expert">
+                    <img class="md:w-[555px] md:h-[633px] max-md:hidden" src="assets/Expert.png" alt="expert">
 
 
                 </div>
             </section>
 
-        <section class="flex flex-col relative items-center gap-[30px] pb-[100px] shadow-lg pt-[100px]">
-            <p class="text-3xl font-bold max-w-[600px] ">Manage your Investment from your hand.</p>
+        <section class="flex flex-col relative items-center gap-[30px] pb-[100px] shadow-lg pt-[100px] mt-[50px] md:mt-[0px]">
+            <p class="text-3xl font-bold max-w-[600px] pl-[20px] md:pl-[0px] pr-[20px] md:pr-[0px] text-center">Manage your Investment from your hand.</p>
             <p class="max-w-[414px] text-center text-[#2222228c] text-lg">Now you will be at ease of investing, buying and selling easier with just a click.</p>
-            <p class="text-2xl font-bold text-[#222222]">Download the App now</p>
-            <div class="flex gap-[35px]">
+            <p class="text-2xl font-bold text-[#222222] mt-[80px] md:mt-[0px]">Download the App now</p>
+            <div class="flex gap-[35px] mt-[50px] md:mt-[0px]">
                 <img src=" assets/app.svg" alt="AppStore">
                 <img src=" assets/app2.svg" alt="PlayStore">
             </div>
-            <img class="absolute right-[180px] bottom-[95px]" src=" assets/chat.svg" alt="chat">
+            <img class="md:absolute md:right-[180px] md:bottom-[95px] absolute bottom-[300px] right-[30px]" src=" assets/chat.svg" alt="chat">
             
         </section>
-            <section class="flex pr-25 pl-25 justify-between pt-[60px]">
+        <!-- Flex to align the image and content section in row -->
+            <section class="md:flex md:pr-25 md:pl-25 md:justify-between md:pt-[60px] max-md:hidden">
                 <img class="w-[300px] h-[300px]" src=" assets/Screenshot from 2025-03-04 15-18-00.png" alt="NeoFundsLogo">
+                <!-- flex to align the content section row wise -->
                 <div class="flex gap-[135px] pr-[10px]">
+                    <!-- flex to  align the top and bottom section of 1st column in content secction in column-->
                     <div class="flex flex-col gap-[20px]">
+                        <!-- flex to align the top section of the content in column -->
                         <div class="flex flex-col gap-[10px]">
                             <p class="font-bold text-lg">Quick Links</p>
                             <p class="text-[#2222228c] text-[15px]">Explore Funds</p>
@@ -180,13 +184,15 @@
                             <p class="text-[#2222228c] text-[15px]">LoanPass</p>
 
                         </div>
-
+                        <!-- flex to align the top section of the content in column -->
                         <div class="flex flex-col gap-[10px]">
                         <p class="font-bold text-lg">Write to us at</p>
                         <p class="text-[#2222228c] text-[15px]">contact@neofund.com</p>
                         </div>
                     </div>
+                    <!-- flex to  align the top and bottom section of 2nd column in content secction in column-->
                     <div class="flex flex-col gap-[20px]">
+                        <!-- flex to align the top section of the content in column -->
                         <div class="flex flex-col gap-[10px]">
                             <p class="font-bold text-lg">Top Funded Houses</p>
                             <p class="text-[#2222228c] text-[15px]">SBI Mutual Fund</p>
@@ -195,7 +201,7 @@
                             <p class="text-[#2222228c] text-[15px]">L&T Mutual Fund</p>
 
                         </div>
-                        
+                        <!-- flex to align the top section of the content in column -->
                         <div class="flex flex-col gap-[10px]">
                         <p class="font-bold text-lg">Call Us At</p>
                         <p class="text-[#2222228c] text-[15px]">+91-8130813864</p>
@@ -203,7 +209,9 @@
 
                         </div>
                     </div>
+                    <!-- flex to  align the top and bottom section of 3rd column in content secction in column-->
                     <div class="flex flex-col gap-[20px]">
+                        <!-- flex to align the top section of the content in column -->
                         <div class="flex flex-col gap-[10px]">
                             <p class="font-bold text-lg">Resources</p>
                             <p class="text-[#2222228c] text-[15px]">Calculators</p>
@@ -211,7 +219,7 @@
                             <p class="text-[#2222228c] text-[15px]">Sitemap</p>
 
                         </div>
-                        
+                        <!-- flex to align the top section of the content in column -->
                         <div class="flex flex-col gap-[10px]">
                         <p class="font-bold text-lg">Download the App</p>
                             <div class="flex max-w-[152px] gap-[10px]">
@@ -230,7 +238,51 @@
                 
 
             </section>
-            <footer class="flex justify-between pr-25 pl-25">
+            <!-- Flex to align the image,nav bar,write us at,Download the app -->
+            <section class="md:hidden flex flex-col mt-[50px]">
+                <img class=" w-[200px] h-[200px]" src="assets/Screenshot from 2025-03-04 15-18-00.png" alt="NeofundsLogo">
+                <!-- flex to align the nav bar in column -->
+                <div class="flex flex-col gap-[30px]">
+                    <button class="w-[385px] h-[52px] border-[1px] border-[#22222225] flex justify-between ml-[20px]  items-center pl-[5px] pr-[5px]">
+                        <p class="text-[17px] font-bold text-[#222222]">Quick Links</p>
+                        <p class="text-[#2222228c] font-[21px]">+</p>
+                    </button>
+                    <button class="w-[385px] h-[52px] border-[1px] border-[#22222225] flex justify-between ml-[20px]  items-center pl-[5px] pr-[5px]">
+                        <p class="text-[17px] font-bold text-[#222222]">Top Funded Houses</p>
+                        <p class="text-[#2222228c] font-[21px]">+</p>
+                    </button>
+                    <button class="w-[385px] h-[52px] border-[1px] border-[#22222225] flex justify-between ml-[20px] items-center pl-[5px] pr-[5px]">
+                        <p class="text-[17px] font-bold text-[#222222]">Resources</p>
+                        <p class="text-[#2222228c] font-[21px]">+</p>
+                    </button>
+
+                </div>
+                <!-- Flex to alin contact us in row -->
+                <div class="flex justify-between pl-[20px] pr-[20px] pt-[30px]">
+                    <div class="flex flex-col">
+                        <p class="font-bold text-[17px] text-[#222222]">Call Us At</p>
+                        <p class="font-[15px] text-[#2222228c] pt-[20px]">
+                            +91-8130813864 <br>
+                            +91-8860039452</p>
+                    </div>
+                    <div class="flex flex-col">
+                        <p class="font-bold text-[17px] text-[#222222]">Call Us At</p>
+                        <p class="font-[15px] text-[#2222228c] pt-[20px]">contact@neofund.com</p>
+                    </div>
+                </div>
+                <!-- Flex to align the download now in column -->
+                <div class="flex flex-col pt-[30pxs] items-center pt-[30px]">
+                    <p class="text-[17px] font-bold">Download the App</p>
+                    <div class="flex gap-[10px]">
+                        <img src="assets/app3.svg" alt="Appstore">
+                        <img src="assets/app4.svg" alt="PLayStore">
+                    </div>
+
+                </div>
+
+            </section>
+            <hr class="border-[#222222] mt-[20px] opacity-10 md:hidden">
+            <footer class="flex justify-between pr-25 pl-25 max-md:hidden">
                 <p class="text-[#2222228c] text-[12px]">Copyright 2019 Mutal Funds. All rights reserved.</p>
                 <div class="flex gap-[35px]">
                     <img src=" assets/social 1.svg" alt="fb">
@@ -239,6 +291,18 @@
                     <img src=" assets/social 4.svg" alt="x">
 
                 </div>
+
+            </footer>
+            <!-- Flex to align the footer section in column -->
+            <footer class="flex flex-col">
+                <!-- flex to align the icons in row -->
+                <div class="flex justify-center gap-[8px] pt-[20px] gap-[20px]">
+                    <img src="assets/social 1.svg" alt="">
+                    <img src="assets/social 2.svg" alt="">
+                    <img src="assets/social 3.svg" alt="">
+                    <img src="assets/social 4.svg" alt="">
+                </div>
+                <p class="text-[12px] text-[#2222228c] self-center pt-[20px]">Copyright 2019 Mutal Funds. All rights reserved.</p>
 
             </footer>
             </body>
